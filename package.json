@@ -1,0 +1,15 @@
+{
+  "name": "privacyguard-edge-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PrivacyGuard-Fleet Edge Gateway administration console — Node.js backend + React frontend",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n server,client -c green,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "start": "npm --prefix server start",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

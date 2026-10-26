@@ -1,0 +1,5 @@
+node_modules/
+cliet/dist/
+.env
+*.log
+data/
